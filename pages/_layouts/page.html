@@ -1,0 +1,24 @@
+<!doctype html>
+<!--
+-- Space Exploration Technologies Corp.
+-- @version 1.0
+-- @date 06.02.2020
+-- @url https://spacex.com
+-->
+<html lang="en">
+
+	{% include head.html %}
+
+	<body id="{{ title }}">
+		<div id="wrapper">
+
+			{% include header.html %}
+
+        {{ content | safe }}
+
+      {% include footer.html %}
+
+  	</div>
+  		{% include modal.html %}
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "spx-netlify",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab-alternate/spx-netlify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve"
+  }
+}
