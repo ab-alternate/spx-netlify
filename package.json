@@ -9,9 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-react": "^7.12.13"
   },
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "yarn watch-js & npx @11ty/eleventy --serve",
+    "watch-js": "babel pages/admin/custom-previews.js --watch -d pages/admin/build",
+    "build-js": "babel pages/admin/custom-previews.js -d pages/admin/build"
   }
 }
