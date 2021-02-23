@@ -14,11 +14,25 @@
 
 			{% include header.html %}
 
-        {{ content | safe }}
+				{{ content | safe }}
 
-      {% include footer.html %}
+			{% include footer.html %}
 
-  	</div>
-  		{% include modal.html %}
-  </body>
+		</div>
+			{% include modal.html %}
+
+
+
+			<script>
+				if (window.netlifyIdentity) {
+					window.netlifyIdentity.on("init", function(user) {
+						if (!user) {
+							window.netlifyIdentity.on("login", function() {
+								document.location.href = "/admin/";
+							});
+						}
+					})
+				}
+			</script>
+	</body>
 </html>

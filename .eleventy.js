@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
 
   // Pass through important assets to the built directory
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("pages/admin/config.yml");
 
   return {
     dir: {
