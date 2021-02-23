@@ -1,0 +1,13 @@
+<style>
+	#feature .background {
+		background-image: url({{ desktopImage }});
+		background-position: {{ backgroundPositionX }} {{ backgroundPositionY }};
+		opacity: 1;
+		visibility: visible;
+	}
+	@media (max-width: 500px) {
+		#feature .background {
+			background-image: url({{ mobileImage }});
+		}
+	}
+</style>

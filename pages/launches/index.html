@@ -1,16 +1,30 @@
 ---
 layout: page.html
 title: launches
+header: Starlink Mission
+subheader: Recent Launch
+buttonText: Replay
+backgroundPositionX: center
+backgroundPositionY: 15%
+desktopImage: /assets/images/Starshipascent.jpg
+mobileImage: /assets/images/Desktop_StarL19_DSC_1291.jpg
+youtubeLink: https://youtu.be/L0dkyV09Zso
+youtubeId: L0dkyV09Zso
+copyLeft: |
+  <p>On Monday, February 15 at 10:59 p.m. EST, SpaceX launched 60 <a href="/">Starlink</a> satellites from Space Launch Complex 40 (SLC-40) at Cape Canaveral Space Force Station in Florida.</p>
+  <p>This was the sixth launch of this Falcon 9 booster, which previously supported Dragon’s 19th and 20th cargo resupply missions to the International Space Station, SAOCOM 1B, NROL-108, and a Starlink mission.</p>
+copyRight: |
+  <p>You can watch a replay of this mission above.</p>
 ---
 <div id="feature" class="section">
-	<div class="background" style="background-position: center 15%" data-desktop="/assets/images/Desktop_StarL19_DSC_1291.jpg" data-mobile="/assets/images/Mobile_Launch_StarL19_DSC_3781.jpg"></div>
+	<div class="background"></div>
 	<div class="section-inner feature">
 		<div class="inner-left-bottom">
-			<h3>Recent Launch</h3>
-			<h2 class="shadowed">Starlink Mission</h2>
-			<a class="btn" tabindex="0" href="https://youtu.be/L0dkyV09Zso" data-video="L0dkyV09Zso">
+			<h3>{{ subheader }}</h3>
+			<h2 class="shadowed">{{ header }}</h2>
+			<a class="btn" tabindex="0" href="{{ youtubeLink }}" data-video="{{ youtubeId }}">
 				<div class="hover"></div>
-				<span class="text">Replay</span>
+				<span class="text">{{ buttonText }}</span>
 			</a>
 		</div>
 		<div id="scrollme">
@@ -20,15 +34,17 @@ title: launches
 		</div>
 	</div>
 </div>
+
+{% include feature-styles.html %}
+
 <div id="update" class="section section-dc launches-update">
 	<div class="section-inner">
 		<div class="text-columns">
 		  <div class="text-column">
-				<p>On Monday, February 15 at 10:59 p.m. EST, SpaceX launched 60 <a href="/">Starlink</a> satellites from Space Launch Complex 40 (SLC-40) at Cape Canaveral Space Force Station in Florida.</p>
-				<p>This was the sixth launch of this Falcon 9 booster, which previously supported Dragon’s 19th and 20th cargo resupply missions to the International Space Station, SAOCOM 1B, NROL-108, and a Starlink mission.</p>
+				{{ copyLeft }}
 		  </div>
 		  <div class="text-column">
-				<p>You can watch a replay of this mission above.</p>
+				{{ copyRight }}
 		  </div>
 		</div>
 
