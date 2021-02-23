@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/images"
+
+local_backend: true
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "/pages/index.html"
+        fields:
+          - {label: Header, name: header, widget: string}
+          - {label: Subheader, name: subheader, widget: string}
