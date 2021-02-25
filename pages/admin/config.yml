@@ -3,13 +3,13 @@ backend:
   branch: master
 
 # Queue updates for manual review before publishing
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 # Uploaded pictures go here
 media_folder: "assets/images"
 
 # Disable new builds for every requested change
-show_preview_links: false
+show_preview_links: true
 
 # Allow for local development when running the proxy
 local_backend: true
