@@ -87,10 +87,14 @@ var LaunchesPreview = createClass({
             	<div class="section-inner">
             		<div class="text-columns">
             		  <div class="text-column">
-            				{ copyLeft }
+                    <ReactMarkdown>
+            				    { copyLeft }
+                    </ReactMarkdown>
             		  </div>
             		  <div class="text-column">
-            				{ copyRight }
+                    <ReactMarkdown>
+            				    { copyRight }
+                    </ReactMarkdown>
             		  </div>
             		</div>
 
@@ -262,6 +266,7 @@ var LaunchesPreview = createClass({
 
 
 CMS.registerPreviewStyle('/assets/css/style.css');
+CMS.registerPreviewStyle('/assets/css/ab.css');
 CMS.registerPreviewStyle('./custom-previews.css');
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("launches", LaunchesPreview);

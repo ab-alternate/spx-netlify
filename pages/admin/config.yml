@@ -27,22 +27,22 @@ collections:
           - {label: Subheader, name: subheader, widget: string}
           - {label: Button Text, name: buttonText, widget: string}
           - {label: Button Link, name: buttonLink, widget: string}
-          - {label: Background Position X, name: backgroundPositionX, widget: string}
-          - {label: Background Position Y, name: backgroundPositionY, widget: string}
+          # - {label: Background Position X, name: backgroundPositionX, widget: string}
+          # - {label: Background Position Y, name: backgroundPositionY, widget: string}
           - {label: Desktop Image, name: desktopImage, widget: image}
-          - {label: Mobile Image, name: mobileImage, widget: image}
+          # - {label: Mobile Image, name: mobileImage, widget: image}
       - label: "Launches"
         name: "launches"
-        file: "/pages/launches/index.html"
+        file: "/pages/launches/index.md"
         fields:
           - {label: Header, name: header, widget: string}
           - {label: Subheader, name: subheader, widget: string}
           - {label: Button Text, name: buttonText, widget: string}
-          - {label: Background Position X, name: backgroundPositionX, widget: string}
-          - {label: Background Position Y, name: backgroundPositionY, widget: string}
+          # - {label: Background Position X, name: backgroundPositionX, widget: string}
+          # - {label: Background Position Y, name: backgroundPositionY, widget: string}
           - {label: Desktop Image, name: desktopImage, widget: image}
-          - {label: Mobile Image, name: mobileImage, widget: image}
+          # - {label: Mobile Image, name: mobileImage, widget: image}
           - {label: Youtube Link, name: youtubeLink, widget: string}
           - {label: Youtube ID, name: youtubeId, widget: string}
-          - {label: Copy Left, name: copyLeft, widget: markdown}
-          - {label: Copy Right, name: copyRight, widget: markdown}
+          - {label: Copy Left, name: copyLeft, widget: markdown, modes: ['raw']}
+          - {label: Copy Right, name: copyRight, widget: markdown, modes: ['raw']}

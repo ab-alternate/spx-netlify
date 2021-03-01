@@ -112,9 +112,9 @@ var LaunchesPreview = createClass({
       class: "text-columns"
     }, h("div", {
       class: "text-column"
-    }, copyLeft), h("div", {
+    }, h(ReactMarkdown, null, copyLeft)), h("div", {
       class: "text-column"
-    }, copyRight)))), h("div", {
+    }, h(ReactMarkdown, null, copyRight))))), h("div", {
       class: "section"
     }, h("div", {
       class: "section-inner"
@@ -164,6 +164,7 @@ var LaunchesPreview = createClass({
   }
 });
 CMS.registerPreviewStyle('/assets/css/style.css');
+CMS.registerPreviewStyle('/assets/css/ab.css');
 CMS.registerPreviewStyle('./custom-previews.css');
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("launches", LaunchesPreview);
